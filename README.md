@@ -1,4 +1,4 @@
-# Performance Matters @cmda-minor-web · 2018-2019
+# 🎓 Progressive Web Apps 👨🏻‍💻 Marten de Bruijn
 
 ## Table of Contents
 
@@ -7,6 +7,7 @@
 - [API](#Api)
 - [Sources](#Sources)
 - [Feature Wishlist](#Feature-Wishlist)
+- [To Do](#To-Do)
 
 ## Beschrijving
 
@@ -45,3 +46,10 @@ npm start
 1. [Node.js + Express - Tutorial GET and POST Request - Academind - Youtube](https://www.youtube.com/watch?v=Sb8xyCa2p7A)
 
 ## Feature Wishlist
+
+## To Do
+
+- [ ] Update readme
+- [ ] Make more partials
+- [ ] Learn more about tooling
+- [ ] Learn more about ejs
