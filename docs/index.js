@@ -1,6 +1,5 @@
 // Require third-party modules
 const express = require('express');
-const rijksData = require('./modules/api.js');
 
 // Create new express app in 'app'
 const app = express();
@@ -24,25 +23,27 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/search/:id', (req, res) => {
+const fetch = require('node-fetch');
+const key = 'JeYMqBl9';
+const baseUrl = 'https://www.rijksmuseum.nl/api/nl/collection?key=';
+const amountProperty = '&ps=';
+const amount = 10;
+
+app.get('/search/:id', async function(req, res) {
+  const colorProperty = '&f.normalized32Colors.hex=%23';
+  const color = req.params.id;
+  const url = baseUrl + key + amountProperty + amount + colorProperty + color;
+
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  const overviewData = jsonData.artObjects;
+  console.log(overviewData);
+
   res.render('overview', {
     title: 'Overview',
-    output: req.params.id,
+    overviewData,
   });
 });
-
-// app.post('/search/submit', (req, res) => {
-//   const red = req.body.red;
-//   const green = req.body.green;
-//   const blue = req.body.blue;
-//   res.redirect('/search/' + red + green + blue);
-// });
-
-//  app.get('/search', (req, res) => {
-//    rijksData.getArtObjects().then(function(rijksData) {
-//      res.render('overview', { data: rijksData });
-//    });
-//  });
 
 // Set up the server
 app.listen(port, function() {

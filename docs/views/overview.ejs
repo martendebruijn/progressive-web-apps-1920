@@ -19,11 +19,25 @@
     <!-- <script src="/index.js" defer></script> -->
   </head>
   <body>
-    <main>
+    <div>
+       <div id="wrapper">
+        <% if(overviewData.length !== 0) {%>
+          <% overviewData.map(item => { %>
+            <a class="card" href="/<%= item.id %>">
+              <img src="<%= item.webImage.url %>" class="overview-img" alt="<%= item.title %>">
+              
+              <div>
+                <h2><%= item.title %></h2>
+                <h3><%= item.principalOrFirstMaker %></h3>
+              </div>
+            </a>
+              <% });%>
+              <% } else {%>
+                <span>Er is iets fout gegaan.</span>
+            <% }%>
+      </div> 
 
-<h1 id="title"><%= output %></h1>
-
-</main>
+    </div>
 
 </body>
 </html>
