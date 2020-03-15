@@ -24,8 +24,8 @@ app.get('/', (req, res) => {
 });
 
 const fetch = require('node-fetch');
-const key = 'JeYMqBl9';
-const baseUrl = 'https://www.rijksmuseum.nl/api/nl/collection?key=';
+const key = '?key=JeYMqBl9';
+const baseUrl = 'https://www.rijksmuseum.nl/api/nl/collection';
 const amountProperty = '&ps=';
 const amount = 10;
 
@@ -42,6 +42,19 @@ app.get('/search/:id', async function(req, res) {
   res.render('overview', {
     title: 'Overview',
     overviewData,
+  });
+});
+
+app.get('/object/:id', async function(req, res) {
+  const id = req.params.id;
+  const url = baseUrl + '/' + id + key;
+
+  const response = await fetch(url);
+  const jsonData = await response.json();
+  const detailData = jsonData.artObject;
+  res.render('details', {
+    title: 'Detail',
+    detailData,
   });
 });
 
