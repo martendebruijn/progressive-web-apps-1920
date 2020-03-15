@@ -1,61 +1,47 @@
 # Performance Matters @cmda-minor-web · 2018-2019
 
+## Table of Contents
+
+- [Beschrijving](#Beschrijving)
+- [Eerste week](#Eerste-week)
+- [API](#Api)
+- [Sources](#Sources)
+- [Feature Wishlist](#Feature-Wishlist)
+
+## Beschrijving
+
+Zet de gemaakte applicatie bij Webapp From Scratch (WAFS) om tot een server side-render i.p.v. client-side.
+Documentatie van de webapplictatie van WAFS kan men [hier](https://github.com/martendebruijn/web-app-from-scratch-1920) vinden.
+
+## Eerste week
+
+De eerste week heb ik vanwege ziekte gemist. Hierdoor moest ik redelijk wat inhalen. Dit heb ik vooral gedaan door [het voorbeeld van Decrek](https://github.com/decrek/progressive-web-apps-1920/blob/master/examples/movies-example/server.js) te volgen, door te kijken naar de code van anderen (i.h.b. [Marjolein Aardewijn](https://github.com/MarjoleinAardewijn/progressive-web-apps-1920/blob/master/docs/server.js) en [Simone Zeijl](https://github.com/Zeijls/performance-matters-1819/blob/master/app.js) ) en vooral te experimenteren met Express.
+
+## Gebruik
+
+```
+git clone ...
+cd /progressive-web-apps-1920/docs
+npm init
+npm i express --save
+npm i nodemon --save-dev
+npm i ejs --save
+npm i node-fetch --save
+```
+
+```
+npm start
+<!-- app wil start on localhost:3000 -->
+```
+
+## API
+
 ## Sources
 
-<!-- https://github.com/decrek/progressive-web-apps-1920/blob/master/examples/movies-example/server.js
-https://github.com/MarjoleinAardewijn/progressive-web-apps-1920/blob/master/docs/server.js
-https://github.com/Zeijls/performance-matters-1819/blob/master/app.js
-https://www.reddit.com/r/webdev/comments/89gmg8/how_can_i_load_my_css_using_express/
-https://www.youtube.com/watch?v=Sb8xyCa2p7A -->
+1. [Server side rendering example - Decrek - Github](https://github.com/decrek/progressive-web-apps-1920/blob/master/examples/movies-example/server.js)
+1. [Progressive Web Apps - Marjolein Aardewijn - Github](https://github.com/MarjoleinAardewijn/progressive-web-apps-1920/blob/master/docs/server.js)
+1. [Progressive Web Apps - Simone Zeijl - Github](https://github.com/Zeijls/performance-matters-1819/blob/master/app.js)
+1. [How can I load my CSS using Express - Reddit](https://www.reddit.com/r/webdev/comments/89gmg8/how_can_i_load_my_css_using_express/)
+1. [Node.js + Express - Tutorial GET and POST Request - Academind - Youtube](https://www.youtube.com/watch?v=Sb8xyCa2p7A)
 
-In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.
-
-## Leerdoelen
-
-- _Je weet het verschil tussen client side en server side rendering en kan server side rendering toepassen_
-- _Je begrijpt hoe de critical render path werkt, en hoe je deze kan optimaliseren voor een betere runtime en/of perceived performance._
-- _Je begrijpt hoe een Service Worker werkt en kan deze in jou applicatie implementeren._
-
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTO-pc2UMvpT0pUjt6NJeckc5N9E7QvCxEfVJW1JjuM0m_9MM8ra05J0s6br486Rocz5JVMhAX_C37_/pubhtml?gid=0&single=true)
-
-## Lesprogramma
-
-### Week 1 - Server Side rendering
-
-Doel: Webpagina's server side renderen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md)  
-[Slides](https://docs.google.com/presentation/d/1i6dvQJ19qPAoDumkZ4cN6Osfvq3dKWgGcJIiqlwNJ8I/edit?usp=sharing)  
-[Performance Matters Introduction](https://github.com/decrek/presentations/blob/master/cmda-performance-matters-2019.pdf)
-
-### Week 2 - Critical Rendering Path
-
-Doel: Critical Rendering path optimaliseren  
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-2.md)  
-[Slides](https://docs.google.com/presentation/d/1akkdQnSZLc5MQZecLFAcNh5kYrqsYFgEh5owAvgitUw/edit?usp=sharing)
-
-### Week 3 - Going Offline
-
-Doel: Webpagina's offline beschikbaar stellen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md)
-
-[Slides](https://docs.google.com/presentation/d/1HVWxtvPr7j2XLZ1QlZJhgDt_RYBAEWjed-zxAps5Xwc/edit?usp=sharing)
-
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## Feature Wishlist
