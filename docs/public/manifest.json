@@ -1,9 +1,0 @@
-{
-  "name": "Kleur kunst",
-  "short_name": "Kleurkunst",
-  "start_url": "/index.js",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#fff000",
-  "orientation": "portrait-primary"
-}
