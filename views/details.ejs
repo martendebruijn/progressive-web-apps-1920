@@ -1,0 +1,20 @@
+<%- include('partials/head') %>
+<div>
+  <button id="backBtn" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
+       <div id="wrapper">
+            <h1 class="f-start"><%= detailData.title %></h1>
+            <img src="<%= detailData.webImage.url %>" class="detail-img f-start" alt="<%= detailData.title %>">
+            <p class="bold f-start"><%= detailData.principalMakers.name %></p>
+            <p class="f-start"><%= detailData.objectTypes[0] %></p>
+            <p class="f-start"><%= detailData.dating.presentingDate %></p>
+
+            <div id="colorWrapper" class="f-start">
+                <% detailData.colors.map(item => {%>
+                    <div class="color-circle" style="background-color: <%= item.hex %>"></div>
+                <%}) %>
+            </div> 
+      </div> 
+
+    </div>
+
+    <%- include('partials/footer') %>
