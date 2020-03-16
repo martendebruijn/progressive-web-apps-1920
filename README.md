@@ -44,6 +44,10 @@ npm start
 1. [Progressive Web Apps - Simone Zeijl - Github](https://github.com/Zeijls/performance-matters-1819/blob/master/app.js)
 1. [How can I load my CSS using Express - Reddit](https://www.reddit.com/r/webdev/comments/89gmg8/how_can_i_load_my_css_using_express/)
 1. [Node.js + Express - Tutorial GET and POST Request - Academind - Youtube](https://www.youtube.com/watch?v=Sb8xyCa2p7A)
+1. [EJS](https://www.npmjs.com/package/ejs)
+1. [Expressjs Guide](https://expressjs.com/en/guide/routing.html)
+1. [MDN Web Docs - Manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
+1. [PWA Tutorial for Beginners #3 - The Web App Manifest - The Net Ninja - Youtube](https://www.youtube.com/watch?v=AlEdGOLhuM8)
 
 ## Feature Wishlist
 
