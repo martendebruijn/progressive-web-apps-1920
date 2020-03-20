@@ -2,12 +2,32 @@
 
 ## Table of Contents
 
+- [Live Demo](#Live-Demo)
+- [Tussentijdse beoordeling](#Tussentijdse-beoordeling)
+- [To Do](#To-Do)
 - [Beschrijving](#Beschrijving)
 - [Eerste week](#Eerste-week)
 - [API](#Api)
+- [Tools Used](#Tools-Used)
 - [Sources](#Sources)
 - [Feature Wishlist](#Feature-Wishlist)
-- [To Do](#To-Do)
+
+## Live Demo
+
+[Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
+
+## Tussentijdse beoordeling
+
+1. Is het naast het overzetten van client side naar server side en het toevoegen van eens service worker + manifest, de bedoeling dat men nog iets toevoegd aan de applicatie? Of mag deze hetzelfde zijn als deze eerst was?
+1. Is het handig om gebruik te maken van modules bij de server? Als in een apart api.js hebben en deze linken met index.js (/server.js). En wat zijn hier de best practices voor?
+
+## To Do
+
+- [ ] Zet API key in .env
+- [ ] Verander home/kleurkies-menu naar een form met app.post(...)
+- [ ] Maak icons
+- [ ] Maak service worker
+- [ ] Update #Gebruik in README
 
 ## Beschrijving
 
@@ -42,6 +62,15 @@ npm dev
 
 ## API
 
+## Tools Used
+
+- [Nodejs](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Express](https://www.npmjs.com/package/express)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [ejs](https://www.npmjs.com/package/ejs)
+- [Heroku](https://www.heroku.com)
+
 ## Sources
 
 1. [Server side rendering example - Decrek - Github](https://github.com/decrek/progressive-web-apps-1920/blob/master/examples/movies-example/server.js)
@@ -55,10 +84,3 @@ npm dev
 1. [PWA Tutorial for Beginners #3 - The Web App Manifest - The Net Ninja - Youtube](https://www.youtube.com/watch?v=AlEdGOLhuM8)
 
 ## Feature Wishlist
-
-## To Do
-
-- [ ] Update readme
-- [ ] Make more partials
-- [ ] Learn more about tooling
-- [ ] Learn more about ejs
