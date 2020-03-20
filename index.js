@@ -1,9 +1,11 @@
 // Require third-party modules
 const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config();
 
 // Create new express app in 'app'
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // const rijksData = require('');
 

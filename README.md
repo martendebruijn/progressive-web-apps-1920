@@ -35,6 +35,11 @@ npm start
 <!-- app wil start on localhost:3000 -->
 ```
 
+```
+npm dev
+<!-- app wil start in development modus on localhost:3000 -->
+```
+
 ## API
 
 ## Sources
