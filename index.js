@@ -60,33 +60,9 @@ app.post('/search', async function(req, res) {
   res.end();
 });
 
-// app.get('/search/:id', async function(req, res) {
-//   const colorProperty = '&f.normalized32Colors.hex=%23';
-//   const color = req.params.id;
-//   const url =
-//     baseUrl +
-//     keyProperty +
-//     key +
-//     amountProperty +
-//     amount +
-//     colorProperty +
-//     color;
-
-//   const response = await fetch(url);
-//   const jsonData = await response.json();
-//   const overviewData = jsonData.artObjects;
-//   console.log(overviewData);
-
-//   res.render('overview', {
-//     title: 'Overview',
-//     style: '../css/styles.css',
-//     overviewData,
-//   });
-// });
-
 app.get('/object/:id', async function(req, res) {
   const id = req.params.id;
-  const url = baseUrl + '/' + id + key;
+  const url = baseUrl + '/' + id + keyProperty + key;
 
   const response = await fetch(url);
   const jsonData = await response.json();

@@ -1,21 +1,25 @@
 <%- include('partials/head') %>
 <div>
-  <button id="backBtn" onclick="history.back()"><i class="fas fa-arrow-left"></i></button>
-         <div id="wrapper">
-        <% if(overviewData.length !== 0) {%>
-          <% overviewData.map(item => { %>
-            <a class="card" href="/object/<%= item.objectNumber %>">
-              <img src="<%= item.webImage.url %>" class="overview-img" alt="<%= item.title %>">
-              
-              <div>
-                <h2><%= item.title %></h2>
-                <h3><%= item.principalOrFirstMaker %></h3>
-              </div>
-            </a>
-              <% });%>
-              <% } else {%>
-                <span>Er is iets fout gegaan.</span>
-            <% }%>
-      </div> 
-    </div>
-    <%- include('partials/footer') %>
+  <button id="backBtn" onclick="history.back()">
+    <i class="fas fa-arrow-left"></i>
+  </button>
+  <div id="wrapper">
+    <% if(overviewData.length !== 0) {%> <% overviewData.map(item => { %>
+    <a class="card" href="/object/<%= item.objectNumber %>">
+      <div class="fixed-ratio" style="padding-bottom: 50%;">
+        <div class="fixed-ratio-content">
+          <img src="<%= item.webImage.url %>" alt="<%= item.title %>" />
+        </div>
+      </div>
+
+      <div>
+        <h2><%= item.title %></h2>
+        <h3><%= item.principalOrFirstMaker %></h3>
+      </div>
+    </a>
+    <% });%> <% } else {%>
+    <span>Er is iets fout gegaan.</span>
+    <% }%>
+  </div>
+</div>
+<%- include('partials/footer') %>
