@@ -1,7 +1,7 @@
 const staticCacheName = 'site-static';
 const assets = [
   '/',
-  '/css/styles.css',
+  '/css/styles.min.css',
   //   'https://fonts.googleapis.com/css?family=Roboto&display=swap',
   //   'https://kit.fontawesome.com/45727ea779.js',
 ];

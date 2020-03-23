@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "gulp-default": "gulp",
-    "build-css": "gulp css",
+    "build-css": "gulp build",
+    "build-js": "terser ./src/js/colorSliders.js -o ./public/js/main.min.js",
     "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,8 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify-es": "^2.0.0",
     "nodemon": "^2.0.2"
   }
 }

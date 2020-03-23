@@ -38,10 +38,6 @@ De eerste week heb ik vanwege ziekte gemist. Hierdoor moest ik redelijk wat inha
 git clone ...
 cd /progressive-web-apps-1920/docs
 npm init
-npm i express --save
-npm i nodemon --save-dev
-npm i ejs --save
-npm i node-fetch --save
 ```
 
 ```
@@ -74,6 +70,7 @@ git push heroku master
   - [Gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)
   - [Gulp autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
   - [Gulp rename](https://www.npmjs.com/package/gulp-rename)
+- [Terser](https://www.npmjs.com/package/terser) vervangen met [gulp-terser](https://www.npmjs.com/package/gulp-terser)
 
 ## Sources
 
@@ -91,3 +88,5 @@ git push heroku master
 1. [Gulp 4 sample file](https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a)
 
 ## Feature Wishlist
+
+- [Gulp eslint](https://www.npmjs.com/package/gulp-eslint)

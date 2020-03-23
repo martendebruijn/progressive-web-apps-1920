@@ -10,15 +10,12 @@
      <form action="/search" method="POST" id="chooseColor">
       <div>
         <div>
-          <div>
-            <input id="red" name="red" class="color-slider" type="range" min="0" max="255" value="0"/>
-          </div>
-          <div>
-            <input id="green" name="green" class="color-slider" type="range" min="0" max="255" value="0"/>
-          </div>
-          <div>
-            <input id="blue" name="blue" class="color-slider" type="range" min="0" max="255" value="0"/>
-          </div>
+            <label>Rood:
+            <input id="red" name="red" class="color-slider" type="range" min="0" max="255" value="0"/></label>
+            <label>Groen: 
+            <input id="green" name="green" class="color-slider" type="range" min="0" max="255" value="0"/></label>         
+            <label>Blauw: 
+            <input id="blue" name="blue" class="color-slider" type="range" min="0" max="255" value="0"/></label>
         </div>
         <div>
           <div class="resultColor color-box"></div>
@@ -30,5 +27,5 @@
   </div>
 </div>
 </div>
- <!-- <script src="./js/color.js"></script>  -->
+ <script src="./js/colorSliders.min.js"></script>
  <%- include('partials/footer') %>

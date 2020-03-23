@@ -1,7 +1,7 @@
 {
   "name": "Kleur kunst",
   "short_name": "Kleurkunst",
-  "start_url": "/index.js",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#fff000",

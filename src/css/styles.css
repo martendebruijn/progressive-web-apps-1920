@@ -317,10 +317,9 @@ form {
   align-items: center;
   justify-content: center;
 }
-form > div {
+form > label {
   width: 100%;
 }
-
 /* Animation by: https://codepen.io/nohoid/pen/kIfto */
 @keyframes rainbow {
   0% {
