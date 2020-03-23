@@ -27,7 +27,7 @@ app.set('views', 'views');
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Ontdek het Rijksmuseum bij kleur',
-    style: './css/styles.css',
+    style: './css/styles.min.css',
   });
 });
 
@@ -54,7 +54,7 @@ app.post('/search', async function(req, res) {
 
   res.render('overview', {
     title: 'Overview',
-    style: '../css/styles.css',
+    style: '../css/styles.min.css',
     overviewData,
   });
   res.end();
@@ -69,7 +69,7 @@ app.get('/object/:id', async function(req, res) {
   const detailData = jsonData.artObject;
   res.render('details', {
     title: 'Detail',
-    style: '../css/styles.css',
+    style: '../css/styles.min.css',
     detailData,
   });
 });

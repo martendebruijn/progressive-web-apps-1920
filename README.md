@@ -54,6 +54,12 @@ npm dev
 <!-- app wil start in development modus on localhost:3000 -->
 ```
 
+<!-- Update heroku:
+```
+heroku login
+git push heroku master
+```-->
+
 ## API
 
 ## Tools Used
@@ -64,6 +70,10 @@ npm dev
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [ejs](https://www.npmjs.com/package/ejs)
 - [Heroku](https://www.heroku.com)
+- [Gulp](https://gulpjs.com/)
+  - [Gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)
+  - [Gulp autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
+  - [Gulp rename](https://www.npmjs.com/package/gulp-rename)
 
 ## Sources
 
@@ -77,5 +87,7 @@ npm dev
 1. [MDN Web Docs - Manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 1. [PWA Tutorial for Beginners - The Net Ninja - Youtube](https://www.youtube.com/watch?v=4XT23X0Fjfk&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
 1. [Voorhoede - Say no to image reflow](https://www.voorhoede.nl/nl/blog/say-no-to-image-reflow/)
+1. [Gulp Documentation](https://gulpjs.com/docs/en/getting-started/quick-start)
+1. [Gulp 4 sample file](https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a)
 
 ## Feature Wishlist
