@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Live Demo](#Live-Demo)
-- [Tussentijdse beoordeling](#Tussentijdse-beoordeling)
 - [To Do](#To-Do)
 - [Beschrijving](#Beschrijving)
 - [Eerste week](#Eerste-week)
@@ -15,11 +14,6 @@
 ## Live Demo
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
-
-## Tussentijdse beoordeling
-
-1. Is het naast het overzetten van client side naar server side en het toevoegen van eens service worker + manifest, de bedoeling dat men nog iets toevoegd aan de applicatie? Of mag deze hetzelfde zijn als deze eerst was?
-1. Is het handig om gebruik te maken van modules bij de server? Als in een apart api.js hebben en deze linken met index.js (/server.js). En wat zijn hier de best practices voor?
 
 ## To Do
 
