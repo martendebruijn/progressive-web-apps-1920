@@ -75,9 +75,7 @@ npm dev
 1. [EJS](https://www.npmjs.com/package/ejs)
 1. [Expressjs Guide](https://expressjs.com/en/guide/routing.html)
 1. [MDN Web Docs - Manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
-1. [PWA Tutorial for Beginners #3 - The Web App Manifest - The Net Ninja - Youtube](https://www.youtube.com/watch?v=AlEdGOLhuM8)
+1. [PWA Tutorial for Beginners - The Net Ninja - Youtube](https://www.youtube.com/watch?v=4XT23X0Fjfk&list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
 1. [Voorhoede - Say no to image reflow](https://www.voorhoede.nl/nl/blog/say-no-to-image-reflow/)
-1. [PWA Tutorial for beginners #6 - Intro to Service Workers - The Net Ninja - Youtube](https://www.youtube.com/watch?v=hxiggHZOGlQ)
-1. [PWA Tutorial for beginners #7 - Service Worker Life-cycle - The Net Ninja - Youtube](https://www.youtube.com/watch?v=hxiggHZOGlQ)
 
 ## Feature Wishlist
