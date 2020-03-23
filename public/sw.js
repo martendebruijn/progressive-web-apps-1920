@@ -2,8 +2,8 @@ const staticCacheName = 'site-static';
 const assets = [
   '/',
   '/css/styles.css',
-  'https://fonts.googleapis.com/css?family=Roboto&display=swap',
-  'https://kit.fontawesome.com/45727ea779.js',
+  //   'https://fonts.googleapis.com/css?family=Roboto&display=swap',
+  //   'https://kit.fontawesome.com/45727ea779.js',
 ];
 
 // install service worker
@@ -25,4 +25,9 @@ self.addEventListener('activate', evt => {
 // fetch events
 self.addEventListener('fetch', evt => {
   //   console.log('fetch event', evt);
+  evt.respondWith(
+    caches.match(evt.request).then(cacheRes => {
+      return cacheRes || fetch(evt.request);
+    })
+  );
 });
