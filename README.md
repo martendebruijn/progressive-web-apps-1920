@@ -76,5 +76,7 @@ npm dev
 1. [Expressjs Guide](https://expressjs.com/en/guide/routing.html)
 1. [MDN Web Docs - Manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 1. [PWA Tutorial for Beginners #3 - The Web App Manifest - The Net Ninja - Youtube](https://www.youtube.com/watch?v=AlEdGOLhuM8)
+1. [Voorhoede - Say no to image reflow](https://www.voorhoede.nl/nl/blog/say-no-to-image-reflow/)
+1. [Calculate Image Aspect Ratio](https://math.stackexchange.com/questions/180804/how-to-get-the-aspect-ratio-of-an-image)
 
 ## Feature Wishlist
