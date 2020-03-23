@@ -17,7 +17,7 @@
 
 ## To Do
 
-- [ ] Zet API key in .env
+- [x] Zet API key in .env
 - [ ] Verander home/kleurkies-menu naar een form met app.post(...)
 - [ ] Maak icons
 - [ ] Maak service worker
