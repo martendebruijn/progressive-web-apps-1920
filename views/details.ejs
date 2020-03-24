@@ -15,9 +15,17 @@
       <h1 class="f-start"><%= detailData.title %></h1>
       <div class="fixed-ratio" style="padding-bottom: 50%;">
         <div class="fixed-ratio-content">
+          <% const url = detailData.webImage.url %> <% const imgBaseUrl =
+          url.substring(0, url.length - 2); %>
           <img
-            src="<%= detailData.webImage.url %>"
             alt="<%= detailData.title %>"
+            sizes="(min-width: 1301px) calc(25vw - 60px), (min-width: 851px) calc(33.33vw - 40px), (min-width: 801px) calc(50vw - 40px), (min-width: 501px) calc(50vw - 20px), 100vw"
+            class="lazy-image"
+            src="<%= imgBaseUrl %>w200"
+            srcset="<%= imgBaseUrl %>w300 300w, 
+              <%= imgBaseUrl %>w500 500w,
+              <%= imgBaseUrl %>w800 800w,
+              <%= imgBaseUrl %>w1000 1000w"
           />
         </div>
       </div>

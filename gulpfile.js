@@ -8,6 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
+const gzip = require('gulp-gzip');
 
 // CSS task
 function css() {
@@ -41,6 +42,20 @@ function img() {
     .pipe(gulp.dest('./public/img'));
 }
 
+// Compress tasks
+function ESCompress() {
+  return gulp
+    .src('./public/js/*.js')
+    .pipe(gzip())
+    .pipe(gulp.dest('./public/js'));
+}
+function CSSCompress() {
+  return gulp
+    .src('./public/css/*.css')
+    .pipe(gzip())
+    .pipe(gulp.dest('./public/css'));
+}
+
 // Watch files
 function watchFiles() {
   gulp.watch('./src/css/*.css', css);
@@ -49,11 +64,17 @@ function watchFiles() {
 
 // Complex tasks
 const build = gulp.series(css, es, img);
+const compress = gulp.series(ESCompress, CSSCompress);
+const buildwcompress = gulp.series(build, compress);
 
 // Export tasks
 exports.css = css;
 exports.es = es;
 exports.img = img;
 exports.watch = watchFiles;
+exports.escompress = ESCompress;
+exports.csscompres = CSSCompress;
+exports.compress = compress;
 exports.build = build;
+exports.buildwcompress = buildwcompress;
 exports.default = build;

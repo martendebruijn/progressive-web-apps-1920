@@ -18,11 +18,6 @@
           <% const url = item.webImage.url %> <% const imgBaseUrl =
           url.substring(0, url.length - 2); %>
           <img
-            data-src="<%= imgBaseUrl %>w200"
-            data-srcset="<%= imgBaseUrl %>w300 300w, 
-              <%= imgBaseUrl %>w500 500w,
-              <%= imgBaseUrl %>w800 800w,
-              <%= imgBaseUrl %>w1000 1000w"
             alt="<%= item.title %>"
             sizes="(min-width: 1301px) calc(25vw - 60px), (min-width: 851px) calc(33.33vw - 40px), (min-width: 801px) calc(50vw - 40px), (min-width: 501px) calc(50vw - 20px), 100vw"
             class="lazy-image"
@@ -45,21 +40,3 @@
     <% }%>
   </div>
 </div>
-<%- include('partials/footer') %>
-<!-- https://lh3.googleusercontent.com/wsOiP3dkzCLPxvJrI22iBU6o0pTx924PhmColiZIS0U-9gxyuAEe0R_zXqBomPXyP5aQerx3BKhyiKxVMf1Z0Y8NjsU=s0
-// fetch url min s0 
-<img data-src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" 
-data-srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,
-//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,
-//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,
-//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w" alt="Willem II en zijn bruid Maria Stuart" sizes="(min-width: 1301px) calc(25vw - 60px), (min-width: 851px) calc(33.33vw - 40px), (min-width: 801px) calc(50vw - 40px), (min-width: 501px) calc(50vw - 20px), 100vw" class="lazy-image" 
-src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" 
-srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,
-//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,
-//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,/
-/lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w"> -->
-
-function getAllImgUrls(data) { return
-data.map(getImgBaseUrl(item.webImage.url)); } function getImgBaseUrl(url) {
-const imgBaseUrl = url.substring(0, url.length - 2); return imgBaseUrl; }
-module.exports = { getImgBaseUrl };

@@ -114,6 +114,7 @@ heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
   - [Gulp autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
   - [Gulp rename](https://www.npmjs.com/package/gulp-rename)
   - [Gulp imagemin](https://www.npmjs.com/package/gulp-imagemin)
+  - [Gulp Gzip](https://www.npmjs.com/package/gulp-gzip)
 - [Terser](https://www.npmjs.com/package/terser) vervangen met [gulp-terser](https://www.npmjs.com/package/gulp-terser)
 
 ## Sources
