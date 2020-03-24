@@ -1,5 +1,7 @@
 # 🎓 Progressive Web Apps 👨🏻‍💻 Marten de Bruijn
 
+**❗️Kijk in [de wiki](https://github.com/martendebruijn/progressive-web-apps-1920/wiki) van deze repo voor een uitgebreidere beschrijving**
+
 ## Table of Contents
 
 - [Live Demo](#Live-Demo)
@@ -14,8 +16,6 @@
 ## Live Demo
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
-
-**❗️Kijk in [de wiki](https://github.com/martendebruijn/progressive-web-apps-1920/wiki) van deze repo voor een uitgebreidere beschrijving**
 
 ## Beschrijving
 
