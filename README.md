@@ -15,7 +15,7 @@
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
 
-**Kijk in de wiki van deze repo voor een uitgebreidere beschrijving **
+**❕Kijk in de wiki van deze repo voor een uitgebreidere beschrijving**
 
 ## Beschrijving
 
