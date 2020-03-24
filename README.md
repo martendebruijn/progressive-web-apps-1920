@@ -15,7 +15,7 @@
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
 
-**❕Kijk in de wiki van deze repo voor een uitgebreidere beschrijving **
+**Kijk in de wiki van deze repo voor een uitgebreidere beschrijving **
 
 ## Beschrijving
 
@@ -132,6 +132,7 @@ npm watch
 1. [Optimizing the Critical Rendering Path - developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path)
 1. [Remove last character from string in JavaScript](https://tecadmin.net/remove-last-character-from-string-in-javascript/)
 1. [Responsive Images - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+1. https://caniuse.com/#search=gzip
 
 ## Feature Wishlist
 
