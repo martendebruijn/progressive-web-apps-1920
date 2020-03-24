@@ -58,7 +58,7 @@ app.get('/c/:color/object/:id', async function(req, res) {
   const detailData = await apiModule.getDetails(id, key);
   res.render('details', {
     title: 'Detail',
-    style: '../../css/styles.min.css',
+    style: '../../../css/styles.min.css',
     detailData,
     previous: color,
   });
