@@ -64,6 +64,13 @@ app.get('/c/:color/object/:id', async function(req, res) {
   });
 });
 
+app.get('/fallback', (req, res) => {
+  res.render('fallback', {
+    title: 'Ah oh!',
+    style: '../css/styles.min.css',
+  });
+});
+
 // Set up the server
 app.listen(port, function() {
   console.log(`Application started on port: ${port}`);

@@ -4,6 +4,7 @@ const assets = [
   '/',
   '/css/styles.min.css',
   '/img/left-arrow.svg',
+  '/fallback',
 ];
 
 // install service worker
@@ -41,6 +42,6 @@ self.addEventListener('fetch', evt => {
           return fetchRes;
         })
       })
-    })
+    }).catch(() => caches.match('/fallback'))
   );
 });
