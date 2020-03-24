@@ -15,7 +15,7 @@
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
 
-**❕Kijk in de wiki van deze repo voor een uitgebreidere beschrijving**
+**❗️Kijk in [de wiki](https://github.com/martendebruijn/progressive-web-apps-1920/wiki) van deze repo voor een uitgebreidere beschrijving**
 
 ## Beschrijving
 
@@ -39,31 +39,31 @@ npm init
 
 ### NPM Scripts
 
-#### Start de app
+#### Start de app:
 
 ```
 npm start
 ```
 
-#### Start de app in development (automaticcly refresh) modus
+#### Start de app in development (automaticly refresh) modus:
 
 ```
 npm run dev
 ```
 
-#### Build ES, CSS, IMG Files
+#### Build ES, CSS, IMG Files:
 
 ```
 npm run build
 ```
 
-#### Build and Compress CSS and ES files
+#### Build and Compress CSS and ES files:
 
 ```
 npm run build-and-compress
 ```
 
-#### Watch ES and CSS files
+#### Watch ES and CSS files:
 
 ```
 npm watch
