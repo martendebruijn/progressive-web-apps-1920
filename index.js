@@ -35,6 +35,7 @@ app.get('/', (req, res) => {
 app.get('/search/:color', async function(req, res) {
   const color = req.params.color;
   const overviewData = await apiModule.getOverview(color, key);
+
   res.render('overview', {
     title: 'Overview',
     style: '../css/styles.min.css',

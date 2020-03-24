@@ -74,6 +74,8 @@ heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
 
 ## Performance Enhancements
 
+### Skeleton Design / Aspect Ratio
+
 ### Service Side Rendering
 
 - ejs
@@ -129,7 +131,14 @@ heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
 1. [Gulp Documentation](https://gulpjs.com/docs/en/getting-started/quick-start)
 1. [Gulp 4 sample file](https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a)
 1. [Passing an API Key to Heroku Node Application](https://sung.codes/blog/2017/09/09/passing-api-key-heroku-node-application/)
+1. [Optimizing the Critical Rendering Path - developers.google.com](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/optimizing-critical-rendering-path)
+1. [Remove last character from string in JavaScript](https://tecadmin.net/remove-last-character-from-string-in-javascript/)
+1. [Responsive Images - MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
 ## Feature Wishlist
 
 - [Gulp eslint](https://www.npmjs.com/package/gulp-eslint)
+  <!--
+  <img data-src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" data-srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w" alt="Willem II en zijn bruid Maria Stuart" sizes="(min-width: 1301px) calc(25vw - 60px), (min-width: 851px) calc(33.33vw - 40px), (min-width: 801px) calc(50vw - 40px), (min-width: 501px) calc(50vw - 20px), 100vw" class="lazy-image" src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w">
+
+-->

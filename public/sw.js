@@ -1,9 +1,9 @@
-const staticCacheName = 'site-static-v3';
-const dynamicCache = 'site-dynamic-v2';
+const staticCacheName = 'site-static-v1';
+const dynamicCache = 'site-dynamic-v1';
 const assets = [
   '/',
   '/css/styles.min.css',
-  '/img/left-arrow.svg',
+  '/img/left-arrow.min.svg',
   '/fallback',
 ];
 

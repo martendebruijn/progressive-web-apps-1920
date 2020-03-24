@@ -340,6 +340,7 @@ h2 {
   align-items: center;
   border-radius: 5px;
   margin-top: 1em;
+  overflow-x: hidden;
 }
 .card > div,
 .card > img {
@@ -386,10 +387,16 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 97%;
   height: 100%;
   max-width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #fcf8f3;
+}
+.lazy-image {
+  opacity: 1;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
 }
