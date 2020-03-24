@@ -1,8 +1,9 @@
-const staticCacheName = 'site-static-v1';
-const dynamicCache = 'site-dynamic-v1';
+const staticCacheName = 'site-static-v3';
+const dynamicCache = 'site-dynamic-v2';
 const assets = [
   '/',
   '/css/styles.min.css',
+  '/img/left-arrow.svg',
 ];
 
 // install service worker
