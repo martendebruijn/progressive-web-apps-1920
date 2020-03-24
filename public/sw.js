@@ -24,7 +24,7 @@ self.addEventListener('activate', evt => {
   evt.waitUntil(
     caches.keys().then(keys => {
       return Promise.all(keys
-        .filter(key => key !== staticCacheName)
+        .filter(key => key !== staticCacheName && key !== dynamicCache)
         .map(key => caches.delete(key))
         )
     })
