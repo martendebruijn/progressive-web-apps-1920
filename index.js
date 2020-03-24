@@ -39,6 +39,7 @@ app.get('/search/:color', async function(req, res) {
     title: 'Overview',
     style: '../css/styles.min.css',
     overviewData,
+    color,
   });
 });
 
@@ -51,13 +52,15 @@ app.post('/search', function(req, res) {
   res.end();
 });
 
-app.get('/object/:id', async function(req, res) {
+app.get('/c/:color/object/:id', async function(req, res) {
+  const color = req.params.color;
   const id = req.params.id;
   const detailData = await apiModule.getDetails(id, key);
   res.render('details', {
     title: 'Detail',
-    style: '../css/styles.min.css',
+    style: '../../css/styles.min.css',
     detailData,
+    previous: color,
   });
 });
 

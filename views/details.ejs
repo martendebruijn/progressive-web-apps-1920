@@ -1,8 +1,10 @@
 <%- include('partials/head') %>
 <div>
-  <button id="backBtn" onclick="history.back()">
-    <i class="fas fa-arrow-left"></i>
-  </button>
+  <a href="/<%= previous %>">
+    <button type="button" class="back-btn">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+  </a>
   <div id="wrapper">
     <div class="detail">
       <h1 class="f-start"><%= detailData.title %></h1>

@@ -164,7 +164,7 @@ a {
 i {
   font-size: 3em;
 }
-#backBtn {
+.back-btn {
   appearance: none;
   -webkit-appearance: none;
   border: none;
