@@ -72,6 +72,31 @@ heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
 
 - [Passing Api Key Heroku Node Application - sung.codes](https://sung.codes/blog/2017/09/09/passing-api-key-heroku-node-application/)
 
+## Performance Enhancements
+
+### Service Side Rendering
+
+- ejs
+
+### Minifying
+
+- CSS
+- ES
+- img/svg
+
+### Caching
+
+- sw
+- static
+- dynamic
+
+### Compression
+
+### Service worker
+
+- caching
+- fallback
+
 ## API
 
 ## Tools Used
@@ -86,6 +111,7 @@ heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
   - [Gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)
   - [Gulp autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
   - [Gulp rename](https://www.npmjs.com/package/gulp-rename)
+  - [Gulp imagemin](https://www.npmjs.com/package/gulp-imagemin)
 - [Terser](https://www.npmjs.com/package/terser) vervangen met [gulp-terser](https://www.npmjs.com/package/gulp-terser)
 
 ## Sources

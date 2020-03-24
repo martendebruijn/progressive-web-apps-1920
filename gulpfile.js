@@ -7,6 +7,7 @@ const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 const terser = require('gulp-terser');
+const imagemin = require('gulp-imagemin');
 
 // CSS task
 function css() {
@@ -31,6 +32,15 @@ function es() {
     .pipe(gulp.dest('./public/js'));
 }
 
+// img task
+function img() {
+  return gulp
+    .src('./src/img/*')
+    .pipe(imagemin())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./public/img'));
+}
+
 // Watch files
 function watchFiles() {
   gulp.watch('./src/css/*.css', css);
@@ -38,11 +48,12 @@ function watchFiles() {
 }
 
 // Complex tasks
-const build = gulp.series(css, es);
+const build = gulp.series(css, es, img);
 
 // Export tasks
 exports.css = css;
 exports.es = es;
+exports.img = img;
 exports.watch = watchFiles;
 exports.build = build;
-exports.default = build; // executed with 'gulp'
+exports.default = build;
