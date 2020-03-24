@@ -2,6 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const colorModule = require('./modules/color.js');
+const apiModule = require('./modules/api.js');
 dotenv.config();
 
 // Create new express app in 'app'
@@ -31,42 +32,28 @@ app.get('/', (req, res) => {
   });
 });
 
-const fetch = require('node-fetch');
-const keyProperty = '?key=';
-const baseUrl = 'https://www.rijksmuseum.nl/api/nl/collection';
-const amountProperty = '&ps=';
-const amount = 10;
-
-app.post('/search', async function(req, res) {
-  console.log(req.body);
-  const redV = req.body.red;
-  const greenV = req.body.green;
-  const blueV = req.body.blue;
-  const hex = colorModule.getVal(redV, greenV, blueV);
-  const colorProperty = '&f.normalized32Colors.hex=%23';
-  const url =
-    baseUrl + keyProperty + key + amountProperty + amount + colorProperty + hex;
-
-  const response = await fetch(url);
-  const jsonData = await response.json();
-  const overviewData = jsonData.artObjects;
-  console.log(overviewData);
-
+app.get('/search/:color', async function(req, res) {
+  const color = req.params.color;
+  const overviewData = await apiModule.getOverview(color, key);
   res.render('overview', {
     title: 'Overview',
     style: '../css/styles.min.css',
     overviewData,
   });
+});
+
+app.post('/search', function(req, res) {
+  const redV = req.body.red;
+  const greenV = req.body.green;
+  const blueV = req.body.blue;
+  const hex = colorModule.getVal(redV, greenV, blueV);
+  res.redirect(`/search/${hex}`);
   res.end();
 });
 
 app.get('/object/:id', async function(req, res) {
   const id = req.params.id;
-  const url = baseUrl + '/' + id + keyProperty + key;
-
-  const response = await fetch(url);
-  const jsonData = await response.json();
-  const detailData = jsonData.artObject;
+  const detailData = await apiModule.getDetails(id, key);
   res.render('details', {
     title: 'Detail',
     style: '../css/styles.min.css',

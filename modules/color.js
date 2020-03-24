@@ -15,8 +15,8 @@ function hexToRgb(hex) {
 function rijksColorsToRgb() {
   // De kleurcodes die de rijksmuseum API ondersteund:
   // prettier-ignore
-  const rijksmuseumColorsHex = [ '#737C84', '#FBF6E1', '#2F4F4F', '#E0CC91', '#FBF6E1', '#000000', '#B5BFCC',
-  '#737C84', '#B35A1F', '#E0CC91', '#F6ECF3', '#B5BFCC', '#F6ECF3', '#981313', '#F49B7A', '#2F4F4F', '#DDA5AA',
+  const rijksmuseumColorsHex = [ '#737C84', '#2F4F4F', '#FBF6E1', '#000000', '#B5BFCC',
+   '#B35A1F', '#E0CC91', '#F6ECF3', '#981313', '#F49B7A', '#2F4F4F', '#DDA5AA',
   '#E09714', '#367614', '#4019B1', '#4279DB', '#DE4153', '#62AD77', '#8268DC', '#850085', '#981313',
   '#DDA5AA', '#DF4C93', '#FFEB00', '#4279DB'
   ];
@@ -78,6 +78,7 @@ function getVal(r, g, b) {
   const rv = closestRGB.r;
   const gv = closestRGB.g;
   const bv = closestRGB.b;
+  console.log('hex:');
   console.log(fullHex(rv, gv, bv));
   return fullHex(rv, gv, bv);
 }

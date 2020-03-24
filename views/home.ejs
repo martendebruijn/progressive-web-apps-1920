@@ -10,12 +10,9 @@
      <form action="/search" method="POST" id="chooseColor">
       <div>
         <div>
-            <label>Rood:
-            <input id="red" name="red" class="color-slider" type="range" min="0" max="255" value="0"/></label>
-            <label>Groen: 
-            <input id="green" name="green" class="color-slider" type="range" min="0" max="255" value="0"/></label>         
-            <label>Blauw: 
-            <input id="blue" name="blue" class="color-slider" type="range" min="0" max="255" value="0"/></label>
+            <input id="red" aria-label="rood" name="red" class="color-slider" type="range" min="0" max="255" value="0"/>
+            <input id="green" aria-label="groen" name="green" class="color-slider" type="range" min="0" max="255" value="0"/>
+            <input id="blue" aria-label="blauw" name="blue" class="color-slider" type="range" min="0" max="255" value="0"/>
         </div>
         <div>
           <div class="resultColor color-box"></div>

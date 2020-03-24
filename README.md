@@ -18,10 +18,10 @@
 ## To Do
 
 - [x] Zet API key in .env
-- [ ] Verander home/kleurkies-menu naar een form met app.post(...)
-- [ ] Maak icons
-- [ ] Maak service worker
-- [ ] Update #Gebruik in README
+- [x] Verander home/kleurkies-menu naar een form met app.post(...)
+- [x] Maak icons
+- [x] Maak service worker
+- [x] Update #Gebruik in README
 
 ## Beschrijving
 
@@ -50,11 +50,27 @@ npm dev
 <!-- app wil start in development modus on localhost:3000 -->
 ```
 
-<!-- Update heroku:
+## Heroku
+
+### Update Heroku
+
 ```
 heroku login
 git push heroku master
-```-->
+```
+
+### Set environment variables on Heroku
+
+```
+heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
+```
+
+`heroku config:get` retrieves the environment variable value
+`heroku config` will return all the configuration values set for the application.
+
+###### Source
+
+- [Passing Api Key Heroku Node Application - sung.codes](https://sung.codes/blog/2017/09/09/passing-api-key-heroku-node-application/)
 
 ## API
 
@@ -86,6 +102,7 @@ git push heroku master
 1. [Voorhoede - Say no to image reflow](https://www.voorhoede.nl/nl/blog/say-no-to-image-reflow/)
 1. [Gulp Documentation](https://gulpjs.com/docs/en/getting-started/quick-start)
 1. [Gulp 4 sample file](https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a)
+1. [Passing an API Key to Heroku Node Application](https://sung.codes/blog/2017/09/09/passing-api-key-heroku-node-application/)
 
 ## Feature Wishlist
 
