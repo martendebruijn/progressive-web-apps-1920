@@ -5,8 +5,8 @@
 - [Live Demo](#Live-Demo)
 - [To Do](#To-Do)
 - [Beschrijving](#Beschrijving)
-- [Eerste week](#Eerste-week)
-- [API](#Api)
+- [Gebruik](#Gebruik)
+- [Performance Enhancements ](#Performance-Enhancements)
 - [Tools Used](#Tools-Used)
 - [Sources](#Sources)
 - [Feature Wishlist](#Feature-Wishlist)
@@ -15,62 +15,59 @@
 
 [Live Demo](https://pwa-marten-de-bruijn.herokuapp.com/)
 
-## To Do
-
-- [x] Zet API key in .env
-- [x] Verander home/kleurkies-menu naar een form met app.post(...)
-- [x] Maak icons
-- [x] Maak service worker
-- [x] Update #Gebruik in README
+**❕Kijk in de wiki van deze repo voor een uitgebreidere beschrijving **
 
 ## Beschrijving
 
 Zet de gemaakte applicatie bij Webapp From Scratch (WAFS) om tot een server side-render i.p.v. client-side.
 Documentatie van de webapplictatie van WAFS kan men [hier](https://github.com/martendebruijn/web-app-from-scratch-1920) vinden.
 
-## Eerste week
-
-De eerste week heb ik vanwege ziekte gemist. Hierdoor moest ik redelijk wat inhalen. Dit heb ik vooral gedaan door [het voorbeeld van Decrek](https://github.com/decrek/progressive-web-apps-1920/blob/master/examples/movies-example/server.js) te volgen, door te kijken naar de code van anderen (i.h.b. [Marjolein Aardewijn](https://github.com/MarjoleinAardewijn/progressive-web-apps-1920/blob/master/docs/server.js) en [Simone Zeijl](https://github.com/Zeijls/performance-matters-1819/blob/master/app.js) ) en vooral te experimenteren met Express.
-
 ## Gebruik
 
+### Clone repo
+
 ```
-git clone ...
-cd /progressive-web-apps-1920/docs
+git clone https://github.com/martendebruijn/progressive-web-apps-1920.git
+cd /progressive-web-apps-1920
+```
+
+### Install npm packages
+
+```
 npm init
 ```
 
+### NPM Scripts
+
+#### Start de app
+
 ```
 npm start
-<!-- app wil start on localhost:3000 -->
 ```
 
-```
-npm dev
-<!-- app wil start in development modus on localhost:3000 -->
-```
-
-## Heroku
-
-### Update Heroku
+#### Start de app in development (automaticcly refresh) modus
 
 ```
-heroku login
-git push heroku master
+npm run dev
 ```
 
-### Set environment variables on Heroku
+#### Build ES, CSS, IMG Files
 
 ```
-heroku config:set<ENVIRONMENT_VARIABLE>=<VALUE>
+npm run build
 ```
 
-`heroku config:get` retrieves the environment variable value
-`heroku config` will return all the configuration values set for the application.
+#### Build and Compress CSS and ES files
 
-###### Source
+```
+npm run build-and-compress
+```
 
-- [Passing Api Key Heroku Node Application - sung.codes](https://sung.codes/blog/2017/09/09/passing-api-key-heroku-node-application/)
+#### Watch ES and CSS files
+
+```
+npm watch
+```
 
 ## Performance Enhancements
 
