@@ -71,32 +71,14 @@ npm watch
 
 ## Performance Enhancements
 
-### Skeleton Design / Aspect Ratio
+[Wiki](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#performance-enhancements)
 
-### Service Side Rendering
-
-- ejs
-
-### Minifying
-
-- CSS
-- ES
-- img/svg
-
-### Caching
-
-- sw
-- static
-- dynamic
-
-### Compression
-
-### Service worker
-
-- caching
-- fallback
-
-## API
+1. [Server Side Rendering](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#server-side-rendering)
+1. [Eigen icons gebruiken](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#eigen-icons-gebruiken)
+1. [Skeleton design / Aspect Ratio](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#skeleton-design--aspect-ratio)
+1. [Service Worker](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#service-worker)
+1. [Minifying](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#minifying)
+1. [Compressie](https://github.com/martendebruijn/progressive-web-apps-1920/wiki/Performance-Enhancements#compressie)
 
 ## Tools Used
 
@@ -127,13 +109,11 @@ npm watch
 
 ## Feature Wishlist
 
+- [ ] Caching
 - [ ] [Gulp eslint](https://www.npmjs.com/package/gulp-eslint)
+- [ ] Compression GZIP en Br
 - [ ] Code Splitting
 - [ ] Font Loading
 - [ ] Blocking Font Loading
 - [ ] Critical CSS
 - [ ] Load Styles Async (- if - needed -)
-  <!--
-  <img data-src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" data-srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w" alt="Willem II en zijn bruid Maria Stuart" sizes="(min-width: 1301px) calc(25vw - 60px), (min-width: 851px) calc(33.33vw - 40px), (min-width: 801px) calc(50vw - 40px), (min-width: 501px) calc(50vw - 20px), 100vw" class="lazy-image" src="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w200" srcset="//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w300 300w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w500 500w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w800 800w,//lh3.googleusercontent.com/slOCAknKd3RT1QosmVoqaMMMiUTqTv8jLWUFvJSSPbBkuaZrb7YV32dLN2z5eFUMaFEvNNZgcJTkhDRMWOGnome2dg=w1000 1000w">
-
--->

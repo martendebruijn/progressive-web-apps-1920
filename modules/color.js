@@ -1,5 +1,3 @@
-// { red: '110', green: '95', blue: '146' }
-
 /* Source: https://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb */
 function hexToRgb(hex) {
   var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);

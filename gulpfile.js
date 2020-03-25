@@ -55,6 +55,12 @@ function CSSCompress() {
     .pipe(gzip())
     .pipe(gulp.dest('./public/css'));
 }
+function imgCompress() {
+  return gulp
+    .src('./public/img/*')
+    .pipe(gzip())
+    .pipe(gulp.dest('./public/img'));
+}
 
 // Watch files
 function watchFiles() {
@@ -74,6 +80,7 @@ exports.img = img;
 exports.watch = watchFiles;
 exports.escompress = ESCompress;
 exports.csscompres = CSSCompress;
+exports.imgcompress = imgCompress;
 exports.compress = compress;
 exports.build = build;
 exports.buildwcompress = buildwcompress;
