@@ -28,17 +28,16 @@ app.set('views', 'views');
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Ontdek het Rijksmuseum bij kleur',
-    style: './css/styles.min.css.gz',
+    style: './css/styles.min.css',
   });
 });
 
 app.get('/search/:color', async function(req, res) {
   const color = req.params.color;
   const overviewData = await apiModule.getOverview(color, key);
-  console.log(overviewData);
   res.render('overview', {
     title: 'Overview',
-    style: '../css/styles.min.css.gz',
+    style: '../css/styles.min.css',
     overviewData,
     color,
   });
@@ -59,7 +58,7 @@ app.get('/c/:color/object/:id', async function(req, res) {
   const detailData = await apiModule.getDetails(id, key);
   res.render('details', {
     title: 'Detail',
-    style: '../../../css/styles.min.css.gz',
+    style: '../../../css/styles.min.css',
     detailData,
     previous: color,
   });
@@ -68,7 +67,7 @@ app.get('/c/:color/object/:id', async function(req, res) {
 app.get('/fallback', (req, res) => {
   res.render('fallback', {
     title: 'Ah oh!',
-    style: '../css/styles.min.css.gz',
+    style: '../css/styles.min.css',
   });
 });
 

@@ -51,7 +51,6 @@ function getClosestColor(r, g, b) {
    colorDifference(redValue, greenValue, blueValue, prev.r, prev.g, prev.b) //calculate the color difference between the values of the sliders and the previous values
     ? curr : prev;
   });
-  console.log(closest);
   return closest;
 }
 
@@ -76,8 +75,6 @@ function getVal(r, g, b) {
   const rv = closestRGB.r;
   const gv = closestRGB.g;
   const bv = closestRGB.b;
-  console.log('hex:');
-  console.log(fullHex(rv, gv, bv));
   return fullHex(rv, gv, bv);
 }
 

@@ -17,7 +17,6 @@ async function getOverview(color, key) {
   const response = await fetch(url);
   const jsonData = await response.json();
   const overviewData = jsonData.artObjects;
-  console.log(overviewData);
   return overviewData;
 }
 
